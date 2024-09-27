@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		69C4E6CD2CA7491C00E67563 /* DigioLucasHubertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6CC2CA7491C00E67563 /* DigioLucasHubertApp.swift */; };
-		69C4E6CF2CA7491C00E67563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6CE2CA7491C00E67563 /* ContentView.swift */; };
 		69C4E6D12CA7491E00E67563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C4E6D02CA7491E00E67563 /* Assets.xcassets */; };
 		69C4E6D42CA7491E00E67563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C4E6D32CA7491E00E67563 /* Preview Assets.xcassets */; };
 		69C4E6DE2CA7491E00E67563 /* DigioLucasHubertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6DD2CA7491E00E67563 /* DigioLucasHubertTests.swift */; };
 		69C4E6E82CA7491E00E67563 /* DigioLucasHubertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6E72CA7491E00E67563 /* DigioLucasHubertUITests.swift */; };
 		69C4E6EA2CA7491E00E67563 /* DigioLucasHubertUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6E92CA7491E00E67563 /* DigioLucasHubertUITestsLaunchTests.swift */; };
+		69C4E6FE2CA74B9400E67563 /* HomeDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6FD2CA74B9400E67563 /* HomeDataSourceImpl.swift */; };
+		69C4E7032CA7606A00E67563 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7022CA7606A00E67563 /* HomeViewModel.swift */; };
+		69C4E7052CA7607800E67563 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7042CA7607800E67563 /* HomeView.swift */; };
+		69C4E7072CA7610E00E67563 /* HomeModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7062CA7610E00E67563 /* HomeModelDTO.swift */; };
+		69C4E7092CA7613900E67563 /* SpotlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7082CA7613900E67563 /* SpotlightModel.swift */; };
+		69C4E70B2CA7614600E67563 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E70A2CA7614600E67563 /* ProductModel.swift */; };
+		69C4E70D2CA7615C00E67563 /* CashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E70C2CA7615C00E67563 /* CashModel.swift */; };
+		69C4E70F2CA7639A00E67563 /* HomeRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E70E2CA7639A00E67563 /* HomeRepositoryImpl.swift */; };
+		69C4E7112CA763CD00E67563 /* HomeDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7102CA763CD00E67563 /* HomeDataSourceProtocol.swift */; };
+		69C4E7132CA763F100E67563 /* HomeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7122CA763F100E67563 /* HomeRepositoryProtocol.swift */; };
+		69C4E7152CA764AA00E67563 /* GetSpotlightUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7142CA764AA00E67563 /* GetSpotlightUseCase.swift */; };
+		69C4E7172CA7654800E67563 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7162CA7654800E67563 /* GetProductsUseCase.swift */; };
+		69C4E7192CA7659600E67563 /* GetCashUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7182CA7659600E67563 /* GetCashUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,6 @@
 /* Begin PBXFileReference section */
 		69C4E6C92CA7491C00E67563 /* DigioLucasHubert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioLucasHubert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C4E6CC2CA7491C00E67563 /* DigioLucasHubertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioLucasHubertApp.swift; sourceTree = "<group>"; };
-		69C4E6CE2CA7491C00E67563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69C4E6D02CA7491E00E67563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69C4E6D32CA7491E00E67563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69C4E6D92CA7491E00E67563 /* DigioLucasHubertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioLucasHubertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,19 @@
 		69C4E6E32CA7491E00E67563 /* DigioLucasHubertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioLucasHubertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C4E6E72CA7491E00E67563 /* DigioLucasHubertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioLucasHubertUITests.swift; sourceTree = "<group>"; };
 		69C4E6E92CA7491E00E67563 /* DigioLucasHubertUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioLucasHubertUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69C4E6FD2CA74B9400E67563 /* HomeDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSourceImpl.swift; sourceTree = "<group>"; };
+		69C4E7022CA7606A00E67563 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		69C4E7042CA7607800E67563 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		69C4E7062CA7610E00E67563 /* HomeModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelDTO.swift; sourceTree = "<group>"; };
+		69C4E7082CA7613900E67563 /* SpotlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightModel.swift; sourceTree = "<group>"; };
+		69C4E70A2CA7614600E67563 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		69C4E70C2CA7615C00E67563 /* CashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashModel.swift; sourceTree = "<group>"; };
+		69C4E70E2CA7639A00E67563 /* HomeRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryImpl.swift; sourceTree = "<group>"; };
+		69C4E7102CA763CD00E67563 /* HomeDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSourceProtocol.swift; sourceTree = "<group>"; };
+		69C4E7122CA763F100E67563 /* HomeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		69C4E7142CA764AA00E67563 /* GetSpotlightUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotlightUseCase.swift; sourceTree = "<group>"; };
+		69C4E7162CA7654800E67563 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
+		69C4E7182CA7659600E67563 /* GetCashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCashUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +118,10 @@
 		69C4E6CB2CA7491C00E67563 /* DigioLucasHubert */ = {
 			isa = PBXGroup;
 			children = (
+				69C4E6F82CA7498E00E67563 /* Presenter */,
+				69C4E6F72CA7498500E67563 /* DataSource */,
+				69C4E6F62CA7497900E67563 /* Domain */,
 				69C4E6CC2CA7491C00E67563 /* DigioLucasHubertApp.swift */,
-				69C4E6CE2CA7491C00E67563 /* ContentView.swift */,
 				69C4E6D02CA7491E00E67563 /* Assets.xcassets */,
 				69C4E6D22CA7491E00E67563 /* Preview Content */,
 			);
@@ -125,6 +151,96 @@
 				69C4E6E92CA7491E00E67563 /* DigioLucasHubertUITestsLaunchTests.swift */,
 			);
 			path = DigioLucasHubertUITests;
+			sourceTree = "<group>";
+		};
+		69C4E6F62CA7497900E67563 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E7012CA74BB800E67563 /* Model */,
+				69C4E7002CA74BB000E67563 /* UseCases */,
+				69C4E6FF2CA74BA700E67563 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		69C4E6F72CA7498500E67563 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E6FC2CA74B8900E67563 /* Home */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		69C4E6F82CA7498E00E67563 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E6F92CA749EB00E67563 /* Home */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		69C4E6F92CA749EB00E67563 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E6FB2CA74AC500E67563 /* ViewModel */,
+				69C4E6FA2CA74ABD00E67563 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69C4E6FA2CA74ABD00E67563 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E7042CA7607800E67563 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69C4E6FB2CA74AC500E67563 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E7022CA7606A00E67563 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		69C4E6FC2CA74B8900E67563 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E6FD2CA74B9400E67563 /* HomeDataSourceImpl.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69C4E6FF2CA74BA700E67563 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E70E2CA7639A00E67563 /* HomeRepositoryImpl.swift */,
+				69C4E7122CA763F100E67563 /* HomeRepositoryProtocol.swift */,
+				69C4E7102CA763CD00E67563 /* HomeDataSourceProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		69C4E7002CA74BB000E67563 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E7142CA764AA00E67563 /* GetSpotlightUseCase.swift */,
+				69C4E7162CA7654800E67563 /* GetProductsUseCase.swift */,
+				69C4E7182CA7659600E67563 /* GetCashUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		69C4E7012CA74BB800E67563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69C4E7062CA7610E00E67563 /* HomeModelDTO.swift */,
+				69C4E7082CA7613900E67563 /* SpotlightModel.swift */,
+				69C4E70A2CA7614600E67563 /* ProductModel.swift */,
+				69C4E70C2CA7615C00E67563 /* CashModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +373,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C4E6CF2CA7491C00E67563 /* ContentView.swift in Sources */,
+				69C4E6FE2CA74B9400E67563 /* HomeDataSourceImpl.swift in Sources */,
+				69C4E7092CA7613900E67563 /* SpotlightModel.swift in Sources */,
+				69C4E7072CA7610E00E67563 /* HomeModelDTO.swift in Sources */,
 				69C4E6CD2CA7491C00E67563 /* DigioLucasHubertApp.swift in Sources */,
+				69C4E7052CA7607800E67563 /* HomeView.swift in Sources */,
+				69C4E7192CA7659600E67563 /* GetCashUseCase.swift in Sources */,
+				69C4E7032CA7606A00E67563 /* HomeViewModel.swift in Sources */,
+				69C4E70D2CA7615C00E67563 /* CashModel.swift in Sources */,
+				69C4E7112CA763CD00E67563 /* HomeDataSourceProtocol.swift in Sources */,
+				69C4E7132CA763F100E67563 /* HomeRepositoryProtocol.swift in Sources */,
+				69C4E70F2CA7639A00E67563 /* HomeRepositoryImpl.swift in Sources */,
+				69C4E7172CA7654800E67563 /* GetProductsUseCase.swift in Sources */,
+				69C4E70B2CA7614600E67563 /* ProductModel.swift in Sources */,
+				69C4E7152CA764AA00E67563 /* GetSpotlightUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
