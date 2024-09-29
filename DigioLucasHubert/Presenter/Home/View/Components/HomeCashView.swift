@@ -13,9 +13,9 @@ struct HomeCashView: View {
     var body: some View {
         VStack {
             HomeSessionHeader(text: "Digio Cash")
-            if !cash.bannerURL.isEmpty {
-                AsyncImage(url: URL(string: cash.bannerURL)!) { i in
-                    i.image?
+            if let url = URL(string: cash.bannerURL) {
+                AsyncImage(url: url) { image in
+                    image.image?
                         .resizable()
                         .scaledToFit()
                         .frame(maxWidth: .infinity)

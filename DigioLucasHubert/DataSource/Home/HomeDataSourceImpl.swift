@@ -17,7 +17,9 @@ struct HomeDataSourceImpl: HomeDataSourceProtocol {
 
         let session = URLSession(configuration: sessionConfig)
         
-        let url = URL(string: "https://7hgi9vtkdc.execute-api.sa-east-1.amazonaws.com/sandbox/products")!
+        guard let url = URL(string: "https://7hgi9vtkdc.execute-api.sa-east-1.amazonaws.com/sandbox/products") else {
+            throw URLError(.badURL)
+        }
         let (data, response) = try await session.data(from: url)
 
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
@@ -29,5 +31,4 @@ struct HomeDataSourceImpl: HomeDataSourceProtocol {
 
         return .success(homeModel)
     }
-
 }

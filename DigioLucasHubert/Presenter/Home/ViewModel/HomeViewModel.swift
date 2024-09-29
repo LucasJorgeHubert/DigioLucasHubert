@@ -8,18 +8,19 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
-
     @Published var spotlight: [SpotlightModel] = []
     @Published var products: [ProductModel] = []
-    @Published var cash: CashModel = CashModel(title: "", bannerURL: "", description: "")
+    @Published var cash: CashModel?
     
-    private let getSpotlightUseCase: GetSpotlightUseCase
-    private let getProductsUseCase: GetProductsUseCase
-    private let getCashUseCase: GetCashUseCase
+    private let getSpotlightUseCase: GetSpotlightUseCaseProtocol
+    private let getProductsUseCase: GetProductsUseCaseProtocol
+    private let getCashUseCase: GetCashUseCaseProtocol
     
-    init(getSpotlightUseCase: GetSpotlightUseCase,
-         getProductsUseCase: GetProductsUseCase,
-         getCashUseCase: GetCashUseCase) {
+    init(
+        getSpotlightUseCase: GetSpotlightUseCaseProtocol,
+        getProductsUseCase: GetProductsUseCaseProtocol,
+        getCashUseCase: GetCashUseCaseProtocol
+    ) {
         self.getSpotlightUseCase = getSpotlightUseCase
         self.getProductsUseCase = getProductsUseCase
         self.getCashUseCase = getCashUseCase

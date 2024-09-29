@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
-    
     var userName: String
     
     var body: some View {

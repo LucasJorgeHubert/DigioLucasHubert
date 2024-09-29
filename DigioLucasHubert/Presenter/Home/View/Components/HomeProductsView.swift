@@ -16,15 +16,17 @@ struct HomeProductsView: View {
                 HStack(spacing: 16) {
                     ForEach(products, id: \.self) { product in
                         VStack {
-                            AsyncImage(url: URL(string: product.imageURL)!) { image in
-                                image.image?
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                                    .padding()
+                            if let url = URL(string: product.imageURL) {
+                                AsyncImage(url: url) { image in
+                                    image.image?
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 100)
+                                        .padding()
+                                }
+                                .frame(width: 100, height: 100)
+                                .padding(.vertical)
                             }
-                            .frame(width: 100, height: 100)
-                            .padding(.vertical)
                             
                             Text(product.name)
                                 .font(.headline)

@@ -8,7 +8,6 @@
 import Foundation
 
 class DependencyContainer {
-    
     static let shared = DependencyContainer()
     
     private let homeRepository: HomeRepositoryProtocol
@@ -20,7 +19,6 @@ class DependencyContainer {
     private let homeViewModel: HomeViewModel
     
     private init() {
-
         let homeDataSource = HomeDataSourceImpl()
 
         homeRepository = HomeRepositoryImpl(homeDataSource: homeDataSource)

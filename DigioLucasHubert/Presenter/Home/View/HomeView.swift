@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
-    @State private var toast: Toast? = nil
+    @State private var toast: Toast?
     
     var body: some View {
         NavigationStack {
@@ -17,7 +17,9 @@ struct HomeView: View {
                 VStack {
                     HomeHeaderView(userName: "Lucas Hubert")
                     HomeSpotlightView(items: viewModel.spotlight)
-                    HomeCashView(cash: viewModel.cash)
+                    if let cash = viewModel.cash {
+                        HomeCashView(cash: cash)
+                    }
                     HomeProductsView(products: viewModel.products)
                     Spacer()
                 }
