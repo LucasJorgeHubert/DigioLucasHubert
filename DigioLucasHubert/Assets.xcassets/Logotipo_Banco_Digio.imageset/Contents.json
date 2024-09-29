@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Logotipo_Banco_Digio.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

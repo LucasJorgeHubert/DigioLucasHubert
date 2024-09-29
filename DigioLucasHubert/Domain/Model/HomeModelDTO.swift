@@ -11,4 +11,11 @@ struct HomeModelDTO: Codable {
     let spotlight: [SpotlightModel]
     let products: [ProductModel]
     let cash: CashModel
+    
+    static let MOCK: HomeModelDTO =
+        HomeModelDTO(
+            spotlight: SpotlightModel.MOCK,
+            products: ProductModel.MOCK,
+            cash: CashModel.MOCK
+        )
 }

@@ -26,6 +26,16 @@
 		69C4E7152CA764AA00E67563 /* GetSpotlightUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7142CA764AA00E67563 /* GetSpotlightUseCase.swift */; };
 		69C4E7172CA7654800E67563 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7162CA7654800E67563 /* GetProductsUseCase.swift */; };
 		69C4E7192CA7659600E67563 /* GetCashUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E7182CA7659600E67563 /* GetCashUseCase.swift */; };
+		69CF91F82CA882C4001A3598 /* HomeDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF91F72CA882C4001A3598 /* HomeDependencyInjection.swift */; };
+		69CF91FD2CA88457001A3598 /* HomeSpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF91FC2CA88457001A3598 /* HomeSpotlightView.swift */; };
+		69CF92032CA9D238001A3598 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92022CA9D238001A3598 /* HomeHeaderView.swift */; };
+		69CF92052CA9DA1C001A3598 /* HomeSessionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92042CA9DA1C001A3598 /* HomeSessionHeader.swift */; };
+		69CF92072CA9E224001A3598 /* HomeCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92062CA9E224001A3598 /* HomeCashView.swift */; };
+		69CF92092CA9E445001A3598 /* HomeProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92082CA9E445001A3598 /* HomeProductsView.swift */; };
+		69CF920D2CA9F286001A3598 /* ToastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF920C2CA9F285001A3598 /* ToastModel.swift */; };
+		69CF920F2CA9F2C5001A3598 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF920E2CA9F2C5001A3598 /* ToastView.swift */; };
+		69CF92112CA9F2E6001A3598 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92102CA9F2E6001A3598 /* ToastModifier.swift */; };
+		69CF92142CA9F324001A3598 /* View+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92132CA9F324001A3598 /* View+Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +78,16 @@
 		69C4E7142CA764AA00E67563 /* GetSpotlightUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotlightUseCase.swift; sourceTree = "<group>"; };
 		69C4E7162CA7654800E67563 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
 		69C4E7182CA7659600E67563 /* GetCashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCashUseCase.swift; sourceTree = "<group>"; };
+		69CF91F72CA882C4001A3598 /* HomeDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDependencyInjection.swift; sourceTree = "<group>"; };
+		69CF91FC2CA88457001A3598 /* HomeSpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSpotlightView.swift; sourceTree = "<group>"; };
+		69CF92022CA9D238001A3598 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		69CF92042CA9DA1C001A3598 /* HomeSessionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSessionHeader.swift; sourceTree = "<group>"; };
+		69CF92062CA9E224001A3598 /* HomeCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCashView.swift; sourceTree = "<group>"; };
+		69CF92082CA9E445001A3598 /* HomeProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsView.swift; sourceTree = "<group>"; };
+		69CF920C2CA9F285001A3598 /* ToastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModel.swift; sourceTree = "<group>"; };
+		69CF920E2CA9F2C5001A3598 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		69CF92102CA9F2E6001A3598 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		69CF92132CA9F324001A3598 /* View+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Toast.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +138,8 @@
 		69C4E6CB2CA7491C00E67563 /* DigioLucasHubert */ = {
 			isa = PBXGroup;
 			children = (
+				69CF92122CA9F310001A3598 /* Extensions */,
+				69CF920A2CA9F25E001A3598 /* Common */,
 				69C4E6F82CA7498E00E67563 /* Presenter */,
 				69C4E6F72CA7498500E67563 /* DataSource */,
 				69C4E6F62CA7497900E67563 /* Domain */,
@@ -191,6 +213,7 @@
 		69C4E6FA2CA74ABD00E67563 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69CF91F92CA8841D001A3598 /* Components */,
 				69C4E7042CA7607800E67563 /* HomeView.swift */,
 			);
 			path = View;
@@ -200,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				69C4E7022CA7606A00E67563 /* HomeViewModel.swift */,
+				69CF91F72CA882C4001A3598 /* HomeDependencyInjection.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +265,44 @@
 				69C4E70C2CA7615C00E67563 /* CashModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		69CF91F92CA8841D001A3598 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				69CF91FC2CA88457001A3598 /* HomeSpotlightView.swift */,
+				69CF92082CA9E445001A3598 /* HomeProductsView.swift */,
+				69CF92022CA9D238001A3598 /* HomeHeaderView.swift */,
+				69CF92042CA9DA1C001A3598 /* HomeSessionHeader.swift */,
+				69CF92062CA9E224001A3598 /* HomeCashView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		69CF920A2CA9F25E001A3598 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69CF920B2CA9F26D001A3598 /* Toast */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		69CF920B2CA9F26D001A3598 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				69CF920C2CA9F285001A3598 /* ToastModel.swift */,
+				69CF92102CA9F2E6001A3598 /* ToastModifier.swift */,
+				69CF920E2CA9F2C5001A3598 /* ToastView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		69CF92122CA9F310001A3598 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69CF92132CA9F324001A3598 /* View+Toast.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,12 +436,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				69C4E6FE2CA74B9400E67563 /* HomeDataSourceImpl.swift in Sources */,
+				69CF92092CA9E445001A3598 /* HomeProductsView.swift in Sources */,
+				69CF92072CA9E224001A3598 /* HomeCashView.swift in Sources */,
 				69C4E7092CA7613900E67563 /* SpotlightModel.swift in Sources */,
 				69C4E7072CA7610E00E67563 /* HomeModelDTO.swift in Sources */,
 				69C4E6CD2CA7491C00E67563 /* DigioLucasHubertApp.swift in Sources */,
+				69CF920F2CA9F2C5001A3598 /* ToastView.swift in Sources */,
+				69CF92112CA9F2E6001A3598 /* ToastModifier.swift in Sources */,
+				69CF91FD2CA88457001A3598 /* HomeSpotlightView.swift in Sources */,
+				69CF91F82CA882C4001A3598 /* HomeDependencyInjection.swift in Sources */,
 				69C4E7052CA7607800E67563 /* HomeView.swift in Sources */,
+				69CF920D2CA9F286001A3598 /* ToastModel.swift in Sources */,
+				69CF92142CA9F324001A3598 /* View+Toast.swift in Sources */,
 				69C4E7192CA7659600E67563 /* GetCashUseCase.swift in Sources */,
+				69CF92032CA9D238001A3598 /* HomeHeaderView.swift in Sources */,
 				69C4E7032CA7606A00E67563 /* HomeViewModel.swift in Sources */,
+				69CF92052CA9DA1C001A3598 /* HomeSessionHeader.swift in Sources */,
 				69C4E70D2CA7615C00E67563 /* CashModel.swift in Sources */,
 				69C4E7112CA763CD00E67563 /* HomeDataSourceProtocol.swift in Sources */,
 				69C4E7132CA763F100E67563 /* HomeRepositoryProtocol.swift in Sources */,

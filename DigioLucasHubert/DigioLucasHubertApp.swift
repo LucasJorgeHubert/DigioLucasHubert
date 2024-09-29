@@ -11,7 +11,8 @@ import SwiftUI
 struct DigioLucasHubertApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            let homeViewModel = DependencyContainer.shared.provideHomeViewModel()
+            HomeView(viewModel: homeViewModel)
         }
     }
 }
