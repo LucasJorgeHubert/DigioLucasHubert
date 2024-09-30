@@ -22,6 +22,7 @@ struct HomeHeaderView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 24)
+                .accessibilityIdentifier("HeaderImageView")
         }
         .padding()
     }

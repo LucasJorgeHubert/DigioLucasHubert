@@ -12,8 +12,8 @@ struct HomeSpotlightView: View {
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
-                ForEach(items, id: \.self) { i in
-                    if let url = URL(string: i.bannerURL) {
+                ForEach(items.indices, id: \.self) { index in
+                    if let url = URL(string: items[index].bannerURL) {
                         AsyncImage(url: url) { image in
                             image.image?
                                 .resizable()
@@ -21,6 +21,7 @@ struct HomeSpotlightView: View {
                                 .frame(width: 300, height: 150)
                                 .cornerRadius(10)
                                 .shadow(radius: 5)
+                                .accessibilityIdentifier("SpotlightImage_\(index)")
                         }
                         .containerRelativeFrame(.horizontal, count: 1, span: 1, spacing: 10, alignment: .leading)
                     }
@@ -28,6 +29,7 @@ struct HomeSpotlightView: View {
             }
             .scrollTargetLayout()
             .padding(.vertical)
+            .accessibilityIdentifier("HomeSpotlightScrollView")
         }
         .scrollTargetBehavior(.viewAligned)
         .safeAreaPadding(.horizontal, 40)

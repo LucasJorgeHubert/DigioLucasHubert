@@ -48,6 +48,7 @@ struct HomeProductsView: View {
                 }
                 .padding()
             }
+            .accessibilityIdentifier("HomeProductsScrollView")
         }
     }
 }
