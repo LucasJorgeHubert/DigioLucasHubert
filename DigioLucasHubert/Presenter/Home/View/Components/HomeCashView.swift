@@ -9,10 +9,14 @@ import SwiftUI
 
 struct HomeCashView: View {
     var cash: CashModel
+    @Binding var isLoading: Bool
     
     var body: some View {
         VStack {
             HomeSessionHeader(text: "Digio Cash")
+                .skeleton(with: isLoading)
+                .frame(maxWidth: .infinity, maxHeight: 40)
+                
             if let url = URL(string: cash.bannerURL) {
                 AsyncImage(url: url) { image in
                     image.image?
@@ -20,9 +24,11 @@ struct HomeCashView: View {
                         .scaledToFit()
                         .frame(maxWidth: .infinity)
                         .cornerRadius(10)
-                        .padding(.horizontal)
                         .clipped()
                 }
+                .skeleton(with: isLoading)
+                .frame(maxWidth: .infinity, maxHeight: 100)
+                .padding(.horizontal)
             }
         }
         .frame(maxWidth: .infinity)
@@ -30,5 +36,8 @@ struct HomeCashView: View {
 }
 
 #Preview {
-    HomeCashView(cash: CashModel.MOCK)
+    HomeCashView(
+        cash: CashModel.MOCK,
+        isLoading: Binding.constant(true)
+    )
 }

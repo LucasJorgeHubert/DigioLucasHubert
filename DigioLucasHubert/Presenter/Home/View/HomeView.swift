@@ -10,17 +10,32 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
     @State private var toast: Toast?
+    @State var isLoadingSpotlight = false
+    @State var isLoadingCash = false
+    @State var isLoadingProducts = false
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    HomeHeaderView(userName: "Lucas Hubert")
-                    HomeSpotlightView(items: viewModel.spotlight)
+                    HomeHeaderView(
+                        userName: "Lucas Hubert",
+                        isLoading: $isLoadingSpotlight
+                    )
+                    HomeSpotlightView(
+                        items: viewModel.spotlight,
+                        isLoading: $isLoadingSpotlight
+                    )
                     if let cash = viewModel.cash {
-                        HomeCashView(cash: cash)
+                        HomeCashView(
+                            cash: cash,
+                            isLoading: $isLoadingCash
+                        )
                     }
-                    HomeProductsView(products: viewModel.products)
+                    HomeProductsView(
+                        products: viewModel.products,
+                        isLoading: $isLoadingProducts
+                    )
                     Spacer()
                 }
                 .toastView(toast: $toast)
@@ -29,8 +44,11 @@ struct HomeView: View {
         .task {
             do {
                 try await viewModel.getSpotlight()
+                isLoadingSpotlight = false
                 try await viewModel.getCash()
+                isLoadingCash = false
                 try await viewModel.getProducts()
+                isLoadingProducts = false
             } catch {
                 toast = Toast(style: .error, message: "Error: \(error.localizedDescription)")
             }

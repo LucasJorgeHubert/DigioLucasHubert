@@ -9,9 +9,13 @@ import SwiftUI
 
 struct HomeProductsView: View {
     var products: [ProductModel]
+    @Binding var isLoading: Bool
+    
     var body: some View {
         VStack(spacing: 0) {
             HomeSessionHeader(text: "Produtos")
+                .skeleton(with: isLoading)
+                .frame(maxWidth: .infinity, maxHeight: 40)
             ScrollView(.horizontal) {
                 HStack(spacing: 16) {
                     ForEach(products, id: \.self) { product in
@@ -40,6 +44,7 @@ struct HomeProductsView: View {
                                 .lineLimit(3)
                         }
                         .padding(8)
+                        .skeleton(with: isLoading, shape: .rectangle)
                         .frame(width: 180, height: 250)
                         .background(.white)
                         .cornerRadius(10)
@@ -54,5 +59,8 @@ struct HomeProductsView: View {
 }
 
 #Preview {
-    HomeProductsView(products: ProductModel.MOCK)
+    HomeProductsView(
+        products: ProductModel.MOCK,
+        isLoading: Binding.constant(false)
+    )
 }

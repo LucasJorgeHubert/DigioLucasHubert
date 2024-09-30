@@ -50,6 +50,7 @@
 		69CF92142CA9F324001A3598 /* View+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF92132CA9F324001A3598 /* View+Toast.swift */; };
 		69F9BD212CAAD88800D5D24B /* HomeProductsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9BD202CAAD88800D5D24B /* HomeProductsViewTests.swift */; };
 		69F9BD252CAADD2D00D5D24B /* HomeCashViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F9BD242CAADD2D00D5D24B /* HomeCashViewTests.swift */; };
+		69F9BD2B2CAAE3E200D5D24B /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 69F9BD2A2CAAE3E200D5D24B /* SkeletonUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F9BD2B2CAAE3E200D5D24B /* SkeletonUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +438,9 @@
 			dependencies = (
 			);
 			name = DigioLucasHubert;
+			packageProductDependencies = (
+				69F9BD2A2CAAE3E200D5D24B /* SkeletonUI */,
+			);
 			productName = DigioLucasHubert;
 			productReference = 69C4E6C92CA7491C00E67563 /* DigioLucasHubert.app */;
 			productType = "com.apple.product-type.application";
@@ -512,6 +517,7 @@
 			mainGroup = 69C4E6C02CA7491C00E67563;
 			packageReferences = (
 				691448872CAA0A2C00D69878 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				69F9BD292CAAE3E200D5D24B /* XCRemoteSwiftPackageReference "SkeletonUI" */,
 			);
 			productRefGroup = 69C4E6CA2CA7491C00E67563 /* Products */;
 			projectDirPath = "";
@@ -957,7 +963,23 @@
 				minimumVersion = 0.57.0;
 			};
 		};
+		69F9BD292CAAE3E200D5D24B /* XCRemoteSwiftPackageReference "SkeletonUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CSolanaM/SkeletonUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69F9BD2A2CAAE3E200D5D24B /* SkeletonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69F9BD292CAAE3E200D5D24B /* XCRemoteSwiftPackageReference "SkeletonUI" */;
+			productName = SkeletonUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69C4E6C12CA7491C00E67563 /* Project object */;
 }

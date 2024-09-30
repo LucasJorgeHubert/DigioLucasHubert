@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import SkeletonUI
 
 struct HomeSpotlightView: View {
     let items: [SpotlightModel]
+    @Binding var isLoading: Bool
+    
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
@@ -23,6 +26,7 @@ struct HomeSpotlightView: View {
                                 .shadow(radius: 5)
                                 .accessibilityIdentifier("SpotlightImage_\(index)")
                         }
+                        .skeleton(with: isLoading)
                         .containerRelativeFrame(.horizontal, count: 1, span: 1, spacing: 10, alignment: .leading)
                     }
                 }
@@ -39,5 +43,8 @@ struct HomeSpotlightView: View {
 }
 
 #Preview {
-    HomeSpotlightView(items: SpotlightModel.MOCK)
+    HomeSpotlightView(
+        items: SpotlightModel.MOCK,
+        isLoading: Binding.constant(true)
+    )
 }

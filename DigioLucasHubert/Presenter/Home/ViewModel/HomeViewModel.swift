@@ -27,6 +27,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func getSpotlight() async throws {
+        sleep(1)
         let spotlight = try await getSpotlightUseCase.execute().get()
         await MainActor.run {
             self.spotlight = spotlight
@@ -34,6 +35,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func getProducts() async throws {
+        sleep(1)
         let products = try await getProductsUseCase.execute().get()
         await MainActor.run {
             self.products = products
@@ -41,6 +43,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func getCash() async throws {
+        sleep(1)
         let cash = try await getCashUseCase.execute().get()
         await MainActor.run {
             self.cash = cash
