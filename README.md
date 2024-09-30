@@ -1,4 +1,4 @@
-## Digio App chalange
+## Digio App challenge
 
 ### Lucas Hubert
 Sr iOS developer
@@ -20,5 +20,5 @@ Utilizei da arquitetura MVVM, implementando o Clean Code e Clean Archtecture. O 
 Como todas as informações vem de um mesmo endpoint, e cada UseCase deve ser especifico, foi utilizado o cache, para que o app não faça a requisição para cada Case, se tiver cache, ele utiliza o cache. E o gerenciamento de cache fica isolado na camada de DataSource da requisição, o que previne cache indevido.
 
 ## Outros projetos
-**[Sharegram (Instagram Clone)](https://github.com/LucasJorgeHubert/SwiftUI-Sharegram-App)**
-**[eUber (Uber Clone)](https://github.com/LucasJorgeHubert/SwiftUI-Uber-App)**
+- **[Sharegram (Instagram Clone)](https://github.com/LucasJorgeHubert/SwiftUI-Sharegram-App)**
+- **[eUber (Uber Clone)](https://github.com/LucasJorgeHubert/SwiftUI-Uber-App)**
