@@ -12,9 +12,9 @@ class HomeViewModel: ObservableObject {
     @Published var products: [ProductModel] = []
     @Published var cash: CashModel?
     
-    private let getSpotlightUseCase: GetSpotlightUseCaseProtocol
-    private let getProductsUseCase: GetProductsUseCaseProtocol
-    private let getCashUseCase: GetCashUseCaseProtocol
+    let getSpotlightUseCase: GetSpotlightUseCaseProtocol
+    let getProductsUseCase: GetProductsUseCaseProtocol
+    let getCashUseCase: GetCashUseCaseProtocol
     
     init(
         getSpotlightUseCase: GetSpotlightUseCaseProtocol,

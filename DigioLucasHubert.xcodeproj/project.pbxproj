@@ -12,6 +12,12 @@
 		6914488F2CAA392600D69878 /* SpotlightModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914488E2CAA392600D69878 /* SpotlightModelTests.swift */; };
 		691448912CAA397400D69878 /* ProductModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448902CAA397400D69878 /* ProductModelTests.swift */; };
 		691448932CAA39B800D69878 /* CashModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448922CAA39B800D69878 /* CashModelTests.swift */; };
+		6914489F2CAA433600D69878 /* HomeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914489E2CAA433600D69878 /* HomeRepositoryTests.swift */; };
+		691448A42CAA45B100D69878 /* GetSpotlightUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448A32CAA45B100D69878 /* GetSpotlightUseCaseTests.swift */; };
+		691448A62CAA465F00D69878 /* GetProductsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448A52CAA465F00D69878 /* GetProductsUseCaseTests.swift */; };
+		691448A82CAA46D200D69878 /* GetCAshUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448A72CAA46D200D69878 /* GetCAshUseCaseTests.swift */; };
+		691448AE2CAA482900D69878 /* HomeDependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448AD2CAA482900D69878 /* HomeDependencyInjectionTests.swift */; };
+		691448B02CAA494E00D69878 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691448AF2CAA494E00D69878 /* HomeViewModelTests.swift */; };
 		69C4E6CD2CA7491C00E67563 /* DigioLucasHubertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4E6CC2CA7491C00E67563 /* DigioLucasHubertApp.swift */; };
 		69C4E6D12CA7491E00E67563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C4E6D02CA7491E00E67563 /* Assets.xcassets */; };
 		69C4E6D42CA7491E00E67563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C4E6D32CA7491E00E67563 /* Preview Assets.xcassets */; };
@@ -66,6 +72,12 @@
 		6914488E2CAA392600D69878 /* SpotlightModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightModelTests.swift; sourceTree = "<group>"; };
 		691448902CAA397400D69878 /* ProductModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModelTests.swift; sourceTree = "<group>"; };
 		691448922CAA39B800D69878 /* CashModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashModelTests.swift; sourceTree = "<group>"; };
+		6914489E2CAA433600D69878 /* HomeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryTests.swift; sourceTree = "<group>"; };
+		691448A32CAA45B100D69878 /* GetSpotlightUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotlightUseCaseTests.swift; sourceTree = "<group>"; };
+		691448A52CAA465F00D69878 /* GetProductsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCaseTests.swift; sourceTree = "<group>"; };
+		691448A72CAA46D200D69878 /* GetCAshUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCAshUseCaseTests.swift; sourceTree = "<group>"; };
+		691448AD2CAA482900D69878 /* HomeDependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDependencyInjectionTests.swift; sourceTree = "<group>"; };
+		691448AF2CAA494E00D69878 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		69C4E6C92CA7491C00E67563 /* DigioLucasHubert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioLucasHubert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C4E6CC2CA7491C00E67563 /* DigioLucasHubertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioLucasHubertApp.swift; sourceTree = "<group>"; };
 		69C4E6D02CA7491E00E67563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,10 +140,9 @@
 		691448882CAA103600D69878 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				691448892CAA104B00D69878 /* HomeModelDTOTests.swift */,
-				691448922CAA39B800D69878 /* CashModelTests.swift */,
-				6914488E2CAA392600D69878 /* SpotlightModelTests.swift */,
-				691448902CAA397400D69878 /* ProductModelTests.swift */,
+				691448A22CAA459300D69878 /* UseCases */,
+				6914489D2CAA40FC00D69878 /* Models */,
+				691448A12CAA435F00D69878 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -142,6 +153,60 @@
 				6914488C2CAA1E0B00D69878 /* HomeDataSourceTests.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		6914489D2CAA40FC00D69878 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				691448892CAA104B00D69878 /* HomeModelDTOTests.swift */,
+				691448922CAA39B800D69878 /* CashModelTests.swift */,
+				6914488E2CAA392600D69878 /* SpotlightModelTests.swift */,
+				691448902CAA397400D69878 /* ProductModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		691448A12CAA435F00D69878 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6914489E2CAA433600D69878 /* HomeRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		691448A22CAA459300D69878 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				691448A32CAA45B100D69878 /* GetSpotlightUseCaseTests.swift */,
+				691448A52CAA465F00D69878 /* GetProductsUseCaseTests.swift */,
+				691448A72CAA46D200D69878 /* GetCAshUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		691448AA2CAA47FF00D69878 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				691448AB2CAA480800D69878 /* Home */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		691448AB2CAA480800D69878 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				691448AC2CAA480E00D69878 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		691448AC2CAA480E00D69878 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				691448AD2CAA482900D69878 /* HomeDependencyInjectionTests.swift */,
+				691448AF2CAA494E00D69878 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		69C4E6C02CA7491C00E67563 = {
@@ -190,6 +255,7 @@
 		69C4E6DC2CA7491E00E67563 /* DigioLucasHubertTests */ = {
 			isa = PBXGroup;
 			children = (
+				691448AA2CAA47FF00D69878 /* Presenter */,
 				6914488B2CAA1DEE00D69878 /* DataSource */,
 				691448882CAA103600D69878 /* Domain */,
 				69C4E6DD2CA7491E00E67563 /* DigioLucasHubertTests.swift */,
@@ -526,10 +592,16 @@
 			files = (
 				6914488F2CAA392600D69878 /* SpotlightModelTests.swift in Sources */,
 				6914488A2CAA104B00D69878 /* HomeModelDTOTests.swift in Sources */,
+				6914489F2CAA433600D69878 /* HomeRepositoryTests.swift in Sources */,
+				691448A82CAA46D200D69878 /* GetCAshUseCaseTests.swift in Sources */,
 				6914488D2CAA1E0B00D69878 /* HomeDataSourceTests.swift in Sources */,
 				691448912CAA397400D69878 /* ProductModelTests.swift in Sources */,
+				691448AE2CAA482900D69878 /* HomeDependencyInjectionTests.swift in Sources */,
 				691448932CAA39B800D69878 /* CashModelTests.swift in Sources */,
+				691448A42CAA45B100D69878 /* GetSpotlightUseCaseTests.swift in Sources */,
+				691448A62CAA465F00D69878 /* GetProductsUseCaseTests.swift in Sources */,
 				69C4E6DE2CA7491E00E67563 /* DigioLucasHubertTests.swift in Sources */,
+				691448B02CAA494E00D69878 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
