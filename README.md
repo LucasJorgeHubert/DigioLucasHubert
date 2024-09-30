@@ -2,6 +2,8 @@
 
 ### Lucas Hubert
 Sr iOS developer
+5 Anos de experiência com desenvolvimento iOS
+Swift / SwiftUI / Objective-C
 
 ### Setup
 
