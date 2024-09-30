@@ -13,7 +13,7 @@ struct HomeDataSourceImpl: HomeDataSourceProtocol {
         
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.urlCache = cache
-        sessionConfig.requestCachePolicy = .returnCacheDataElseLoad  // Usar cache se disponível, senão faz a request
+        sessionConfig.requestCachePolicy = .returnCacheDataElseLoad
 
         let session = URLSession(configuration: sessionConfig)
         
